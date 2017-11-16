@@ -1,0 +1,37 @@
+.panel{
+	border: 3px solid blue;
+	background: orange;
+	margin: 10px;
+}
+
+/*
+.border-radius{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+}
+*/
+
+@mixin border-radius ($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+.little-panel{
+	@extend .panel;
+	@include border-radius(5px);
+	color: #ffffff;
+	font-size: 12px;
+	padding: 5px;
+}
+
+.big-panel{
+	@extend .panel;
+	@include border-radius(25px);
+	color: #000000;
+	font-size: 32px;
+	padding: 20px;
+}
