@@ -1,7 +1,9 @@
-$font-stack:    Arial, sans-serif;
-$primary-color: #333;
+$primary-color: green;
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+h1{
+	color: $primary-color;
+}
+
+p{
+	color: $primary-color;
 }
