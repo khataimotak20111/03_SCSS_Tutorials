@@ -24,3 +24,7 @@
         }
     }
 }
+
+.jumbotron {
+    @include backImage('./images/logo_brush.png', 600px, top center);
+}

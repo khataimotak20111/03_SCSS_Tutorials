@@ -427,6 +427,13 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0 10%;
       margin-top: 0; }
 
+.jumbotron {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("./images/logo_brush.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 600px; }
+
 .media {
   margin: 0px;
   padding: 0px;
