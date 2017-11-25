@@ -1,3 +1,4 @@
+/*! Imports */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -407,19 +408,130 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #548c27; }
 
+h1 {
+  color: #EEE8D6; }
+
+h2 {
+  color: #022933; }
+
+h3 {
+  color: #FFBA00; }
+
+h4 {
+  color: #f39856; }
+
+.btn, .btn-default, .btn-hot, .btn-cool {
+  display: inline-block;
+  padding: 6px 12px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-family: Arial, "Helvetica", sans-serif;
+  user-select: none;
+  color: #EEE8D6; }
+
+.btn-default {
+  background-color: #EEE8D6; }
+
+.btn-hot {
+  background-color: #022933; }
+
+.btn-cool {
+  background-color: #FFBA00; }
+
+/*
+.btn-default{
+	@extend .btn;
+	background-color: $color-btn-default;
+}
+
+.btn-hot{
+	@extend .btn;
+	background-color: $color-btn-hot;
+}
+
+.btn-cool{
+	@extend .btn;
+	background-color: $color-btn-cool;
+}
+*/
+.grid:before, .grid:after {
+  content: '';
+  display: table; }
+
+.grid:after {
+  clear: both; }
+
+.grid .item {
+  float: left;
+  width: 19.2%; }
+  .grid .item:nth-child(n) {
+    margin-bottom: 1%;
+    margin-right: 1%; }
+  .grid .item:nth-child(5n) {
+    margin-bottom: 0;
+    margin-right: 0; }
+
+.grid img {
+  display: block;
+  border-radius: 20px;
+  max-width: 100%; }
+
+.background {
+  color: #EEE8D6;
+  margin: 20px 0px;
+  width: 100%;
+  display: table; }
+  .background .container {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 20px; }
+    .background .container h1 {
+      color: #FFBA00;
+      font-family: Arial, "Helvetica", sans-serif;
+      font-size: 5rem;
+      line-height: 105%;
+      margin-bottom: 0;
+      padding: 0 10%; }
+    .background .container p {
+      padding: 0 10%;
+      margin-top: 0; }
+
+.jumbotron {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("./images/logo_brush.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 600px; }
+
 .media {
   margin: 0px;
   padding: 0px;
   list-style: none; }
   .media .item {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
     border-top: 1px dotted #d14348;
     padding-top: 10px; }
+    .media .item:hover {
+      background-color: #FFBA00; }
+    .media .item:last-of-type {
+      border-bottom: 1px solid red; }
+    .media .item:before, .media .item:after {
+      content: '';
+      display: table; }
+    .media .item:after {
+      clear: both; }
   .media .head {
     margin: 0px;
     padding: 0px;
     color: #6d73c2;
     font-size: 2rem; }
+    #typography .media .head {
+      color: red; }
   .media p {
     margin: 0px;
     font-size: 1.5rem; }
@@ -429,3 +541,39 @@ h1, h2, h3, h4, h5, h6 {
   .media a {
     text-decoration: none;
     color: #f39856; }
+
+.table {
+  font-size: 1.5rem;
+  text-align: left;
+  width: 100%; }
+  .table caption {
+    font-size: 2.5rem;
+    text-align: left;
+    padding-bottom: 5px; }
+  .table > thead > tr:hover,
+  .table > tbody > tr:hover,
+  .table > tfoot > tr:hover {
+    background-color: #4a74b2; }
+  .table > thead > tr:nth-child(even),
+  .table > tbody > tr:nth-child(even),
+  .table > tfoot > tr:nth-child(even) {
+    background-color: rgba(255, 186, 0, 0.2); }
+    .table > thead > tr:nth-child(even):hover,
+    .table > tbody > tr:nth-child(even):hover,
+    .table > tfoot > tr:nth-child(even):hover {
+      background-color: #ffba00; }
+  .table > thead > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > th,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > th,
+  .table > tfoot > tr > td {
+    padding: 10px;
+    border-bottom: 1px dotted #0076a3; }
+  .table > thead > tr {
+    background-color: #0076a3;
+    color: #548c27; }
+    .table > thead > tr:hover {
+      background-color: #a32d00; }
+    .table > thead > tr > th {
+      border-bottom: 0px; }
